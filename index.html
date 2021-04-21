@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- font acme -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <style>
+        #cont {
+            height: 250px;
+        }
+    </style>
+    <title>Character Counter</title>
+</head>
+
+<body class="bg-light p-5">
+    <h2 class="text-info text-center w-auto" id="anim">Twitter Inspired Charcater Counter</h2>
+    <div class="container bg-white p-4 w-50 border rounded text-center pl-5 pr-5 mt-4" id="cont">
+        <textarea onkeydown="count()" class="w-100 mt-2 h-75 text-top-left p-1" id="text" placeholder="Whats happening?" value=""></textarea>
+        <p class="text-info mt-2 text-left">You inserted characters</p>
+    </div>
+    <div class="container bg-dark p-3h-25 w-50 border rounded" id="console">
+        <div class="d-flex justify-content-between">
+            <p class="h4 text-light m-3">Console</p>
+            <button onclick="clearText()" class="btn btn-secondary pl-3 pr-3 m-3" id="clear">Clear</button>
+        </div>
+    </div>
+    <div class="container bg-dark w-50 border rounded">
+        <p class="text-warning m-2" id="consoleCount">0</p>
+    </div>
+    <!-- javascript -->
+    <script src="main.js"></script>
+</body>
+
+</html>
